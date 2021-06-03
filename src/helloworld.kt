@@ -4,6 +4,7 @@ fun main(args: Array<String>) {
 
 	println("my name is $name");
 	println("my height is $height");
+	printName(name);
 	println("---------------")
 
 	val a = 6
@@ -19,4 +20,8 @@ fun main(args: Array<String>) {
 		println("Item $x is ${array[x]}")
 		x = x + 1;
 	}
+}
+
+fun printName(name: String) {
+	println("*** I am printing..." + name)
 }
