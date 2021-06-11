@@ -25,3 +25,7 @@ fun main(args: Array<String>) {
 fun printName(name: String) {
 	println("*** I am printing..." + name)
 }
+
+fun testGit(name: String) {
+	println("If I can see this, git personal access token is good");
+}
