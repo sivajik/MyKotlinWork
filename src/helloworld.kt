@@ -22,6 +22,13 @@ fun main(args: Array<String>) {
 	}
 	
 	testGit("somename..");
+	
+	var x1 = 1;
+	while ( x1 < 4) {
+		println("the value of x1 = $x1");
+		x1 += 1;
+	}
+	println("After loop is : " + x1);
 }
 
 fun printName(name: String) {
