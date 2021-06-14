@@ -20,12 +20,22 @@ fun main(args: Array<String>) {
 		println("Item $x is ${array[x]}")
 		x = x + 1;
 	}
+	
+	testGit("somename..");
 }
 
 fun printName(name: String) {
-	println("*** I am printing..." + name)
+	println("*** I am printing..." + name);
+	for (i in 1..10) {
+		println("the value of i: " + i);
+	}
 }
 
 fun testGit(name: String) {
 	println("If I can see this, git personal access token is good");
+	var x = 25;
+	while ( x >= 10) {
+		println("The current value is still less than 25 " + x);
+		x = x - 3;
+	}
 }
