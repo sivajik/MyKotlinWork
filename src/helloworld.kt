@@ -32,7 +32,7 @@ fun printName(name: String) {
 }
 
 fun testGit(name: String) {
-	println("If I can see this, git personal access token is good");
+	println("If I can see this, git personal access token is good: " + name);
 	var x = 25;
 	while ( x >= 10) {
 		println("The current value is still less than 25 " + x);
