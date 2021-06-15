@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
-	println("chapter 02");
-	var x = 6;
-	println(x.plus(11).toString());
+	println("===========");
+	var x = 5;
+	var z:Long = x.toLong();
+	print(z);
 }
