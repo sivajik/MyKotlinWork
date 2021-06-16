@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
 	var array = arrayOf(26, 3, 20, 4, 13, 8, 19, 80)
 	println(array.size);
-
+/*
 	val wordArray1 = arrayOf("24/7", "multi-tier", "B-to-B", "dynamic", "pervasive")
 	val wordArray2 = arrayOf("empowered", "leveraged", "aligned", "targeted")
 	val wordArray3 = arrayOf("process", "paradigm", "solution", "portal", "vision")
@@ -21,4 +21,12 @@ fun main(args: Array<String>) {
 
 	var phrase = "${wordArray1[rand1]} ${wordArray2[rand2]} ${wordArray2[rand3]}"
 	println(phrase);
+*/	
+	
+	var fruits:Array<String> = arrayOf("Banana", "Blueberry", "Pomegranate", "Cherry");
+	var i = 0;
+	while (i < fruits.size) {
+		println("Fruit: ${fruits[i]} => " +  fruits[i]);
+		i++;
+	}
 }
