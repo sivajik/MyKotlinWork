@@ -2,7 +2,13 @@ fun main(args: Array<String>) {
 	var d1: Dog = Dog("BowBow", 25, "Labrador");
 	d1.bark();
 	println(d1);
-	println(d1.toString());
+	println("====")
+	var dogs =
+		arrayOf(Dog("brownie1", 14, "daburman1"), Dog("brownie2", 114, "daburman2"), Dog("brownie3", 214, "daburman3"))
+
+	for (dog: Dog in dogs) {
+		println(dog);
+	}
 }
 
 class Dog(val name: String, var weight: Int, val breed: String) {
