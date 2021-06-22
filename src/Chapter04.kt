@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
 	d1.bark();
 	println(d1);
 	println("====")
-	var dogs =
+	var dogs: Array<Dog> =
 		arrayOf(Dog("brownie1", 14, "daburman1"), Dog("brownie2", 114, "daburman2"), Dog("brownie3", 214, "daburman3"))
 
 	for (dog: Dog in dogs) {
