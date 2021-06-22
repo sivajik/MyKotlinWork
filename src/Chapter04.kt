@@ -9,6 +9,10 @@ fun main(args: Array<String>) {
 	for (dog: Dog in dogs) {
 		println(dog);
 	}
+	println("Another way...");
+	for (i in 0 until dogs.size) {
+		println(dogs[i])
+	}
 }
 
 class Dog(val name: String, var weight: Int, val breed: String) {
