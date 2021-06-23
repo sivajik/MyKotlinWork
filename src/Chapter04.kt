@@ -25,7 +25,16 @@ fun main(args: Array<String>) {
 }
 
 class Dog(val name: String, var weight: Int, val breed: String) {
-	val upperBreed: String = breed.toUpperCase();
+	var upperBreed = breed.toUpperCase();
+	lateinit var unInitialised: String;
+
+	val weightInKgs: Double
+		get() = weight / 2.2;
+
+	var lowerBreed: String = name
+		set(value) {
+			field = value
+		}
 
 	fun bark() {
 		if (weight < 20) {
@@ -40,6 +49,9 @@ class Dog(val name: String, var weight: Int, val breed: String) {
 	}
 
 	init {
-		println("=> Just now created an object " + name);
+		println("=> Just now created an object " + name + " , " + unInitialised);
+		unInitialised = "Jodha";
 	}
+
+
 }
