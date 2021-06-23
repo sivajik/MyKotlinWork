@@ -22,11 +22,25 @@ fun main(args: Array<String>) {
 	for (i in 0 until newDogs.size) {
 		println(newDogs[i])
 	}
+
+	println("======== rectangle solution === ")
+	var allRects = arrayOf(Rectangle(1, 1), Rectangle(1, 1), Rectangle(1, 1), Rectangle(1, 1));
+	for (x in 0 until allRects.size) {
+		allRects[x].width = (x + 1) * 3;
+		allRects[x].height = (x + 5);
+
+		print("Rectangle $x as area of ${allRects[x].area}");
+		if (allRects[x].isSquare) {
+			println("It is a Square");
+		} else {
+			println("It is NOT a Square");
+		}
+	}
 }
 
 class Dog(val name: String, var weight: Int, val breed: String) {
 	var upperBreed = breed.toUpperCase();
-	lateinit var unInitialised: String;
+	var unInitialised: String;
 
 	val weightInKgs: Double
 		get() = weight / 2.2;
@@ -49,9 +63,18 @@ class Dog(val name: String, var weight: Int, val breed: String) {
 	}
 
 	init {
-		println("=> Just now created an object " + name + " , " + unInitialised);
+		println("=> Just now created an object " + name);
 		unInitialised = "Jodha";
 	}
 
+
+}
+
+class Rectangle(var width: Int, var height: Int) {
+	val isSquare: Boolean
+		get() = (width == height);
+
+	val area: Int
+		get() = width * height
 
 }
