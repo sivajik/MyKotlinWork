@@ -25,15 +25,21 @@ fun main(args: Array<String>) {
 }
 
 class Dog(val name: String, var weight: Int, val breed: String) {
+	val upperBreed: String = breed.toUpperCase();
+
 	fun bark() {
 		if (weight < 20) {
-			println("Yip!!!");
+			println("Yip!!! " + upperBreed);
 		} else {
-			println("Woof!!!");
+			println("Woof!!!" + upperBreed);
 		}
 	}
 
 	override fun toString(): String {
 		return "Hello, I am a " + breed + " and name is " + name + " of: " + weight + " lbs";
+	}
+
+	init {
+		println("=> Just now created an object " + name);
 	}
 }
