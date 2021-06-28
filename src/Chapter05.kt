@@ -25,6 +25,18 @@ open class Animal() {
 	}
 }
 
-class Hippo : Animal() {
 
+open class Canine : Animal() {
+
+}
+
+class Wolf : Canine() {
+
+}
+
+class Hippo : Animal() {
+	override val image = "hippo.jpeg";
+	override val food = "grass";
+
+	override val habitat = "water";
 }
